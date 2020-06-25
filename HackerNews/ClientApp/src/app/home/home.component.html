@@ -1,0 +1,25 @@
+
+<h1>The Newest Hacker News </h1>
+
+<p *ngIf="!neweststories"><em> Loading newest stories...</em></p>
+
+<table *ngIf="neweststories">
+  <thead>
+    <tr>
+      <th><h3>Story Title</h3></th>
+      <th><h3>Story Author</h3></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="newest" *ngFor="let neweststory of neweststories">
+      <td>
+        <a *ngIf="neweststory && neweststory?.url; else elseBlock" href="{{ neweststory.url }}">{{ neweststory?.title}}</a>
+        <ng-template #elseBlock>{{ neweststory?.title || ' ' }}</ng-template>
+      </td>
+      <td>{{ neweststory?.by }}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+

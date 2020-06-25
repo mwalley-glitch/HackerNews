@@ -1,0 +1,35 @@
+*{
+    font-family:Courier New, Courier, monospace;
+    color: black;
+}
+
+
+table {
+  display: block;
+  margin: 0px;
+  padding: 2.5%;
+  cursor:pointer;
+  border:double;
+}
+
+td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  line-height: 30px;
+}
+
+.newest:hover {
+  background-color: lavender;
+  padding-bottom: 10%;
+  transform:scale(1.2);
+}
+
+a:hover {
+  color: purple;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightgrey;
+}
