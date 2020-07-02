@@ -10,9 +10,11 @@ using Newtonsoft.Json;
 namespace HackerNews.Controllers
 {
     [Route("api/[controller]")]
-[ApiController]
-public class NewestStoriesController : ControllerBase
-{
+    [ApiController]
+    
+    public class NewestStoriesController : ControllerBase
+    {
+    
     const string NewestStoriesApi = "https://hacker-news.firebaseio.com/v0/newstories.json";
     const string StoryApiTemplate = "https://hacker-news.firebaseio.com/v0/item/{0}.json";
 
